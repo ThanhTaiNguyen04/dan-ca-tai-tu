@@ -40,11 +40,11 @@ export const instruments: Instrument[] = [
   },
   {
     id: 'dan-kim',
-    name: 'Đàn kìm',
-    alias: 'Đàn nguyệt',
+    name: 'Đàn nguyệt',
+    alias: 'Đàn kìm',
     image: '/images/instruments/dan-nguyet-1.jpg',
     intro:
-      'Đàn kìm (đàn nguyệt) có bầu đàn tròn dẹt, cần đàn dài với các phím cao, thường dùng hai dây. Đây là nhạc cụ được xem là trụ cột trong nhiều ban Đờn ca tài tử.',
+      'Đàn nguyệt (đàn kìm) có bầu đàn tròn dẹt, cần đàn dài với các phím cao, thường dùng hai dây. Đây là nhạc cụ được xem là trụ cột trong nhiều ban Đờn ca tài tử.',
     sound:
       'Âm thanh ấm, đầy đặn, có chiều sâu; khả năng nhấn nhá tốt nhờ phím đàn cao.',
     role:
