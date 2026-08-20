@@ -76,7 +76,10 @@ export function AIChat({ initialQuestion }: { initialQuestion?: string }) {
       const res = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: question }),
+        body: JSON.stringify({ 
+          message: question,
+          history: messages.map(m => ({ role: m.role, content: m.content }))
+        }),
       })
       const data = await res.json()
 

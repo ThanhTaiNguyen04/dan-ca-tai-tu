@@ -8,6 +8,7 @@ const GEMINI_MODEL = 'gemini-3.6-flash'
 
 interface ChatRequestBody {
   message?: string
+  history?: { role: 'user' | 'ai'; content: string }[]
 }
 
 export async function POST(req: Request) {
@@ -39,6 +40,17 @@ export async function POST(req: Request) {
 
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${apiKey}`
 
+  const history = body.history ?? []
+  const contents = history.map((msg) => ({
+    role: msg.role === 'ai' ? 'model' : 'user',
+    parts: [{ text: msg.content }],
+  }))
+
+  contents.push({
+    role: 'user',
+    parts: [{ text: message }],
+  })
+
   const payload = {
     systemInstruction: {
       parts: [
@@ -47,12 +59,7 @@ export async function POST(req: Request) {
         },
       ],
     },
-    contents: [
-      {
-        role: 'user',
-        parts: [{ text: message }],
-      },
-    ],
+    contents,
   }
 
   try {
