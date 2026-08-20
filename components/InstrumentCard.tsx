@@ -35,8 +35,8 @@ export function InstrumentCard({ instrument }: { instrument: Instrument }) {
 
       <div className="mt-8 overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
         {instrument.secondaryImage ? (
-          <div className="flex w-full aspect-[16/9]">
-            <div className="relative h-full w-1/2 bg-secondary border-r border-border">
+          <div className="flex w-full aspect-[16/9] gap-2 bg-card">
+            <div className="relative h-full w-1/2 bg-secondary">
               <Image
                 src={instrument.image || '/placeholder.svg'}
                 alt={`Hình ảnh ${instrument.name} 1`}

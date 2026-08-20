@@ -47,7 +47,7 @@ export const instruments: Instrument[] = [
     name: 'Đàn nguyệt',
     alias: 'Đàn kìm',
     image: '/images/instruments/dan-nguyet-1.jpg',
-    secondaryImage: '/images/instruments/dan-nguyet-1.jpg', // Placeholder để ghép 2 ảnh
+    secondaryImage: '/images/instruments/dan-nguyet-2.jpg',
     imagePosition: 'object-bottom',
     intro:
       'Đàn nguyệt (đàn kìm) có bầu đàn tròn dẹt, cần đàn dài với các phím cao, thường dùng hai dây. Đây là nhạc cụ được xem là trụ cột trong nhiều ban Đờn ca tài tử.',
@@ -64,7 +64,7 @@ export const instruments: Instrument[] = [
     name: 'Đàn cò',
     alias: 'Đàn nhị',
     image: '/images/instruments/dan_co.png',
-    secondaryImage: '/images/instruments/dan_co.png', // Placeholder để ghép 2 ảnh
+    secondaryImage: '/images/instruments/dan-co-2.jpg',
     imagePosition: 'object-bottom',
     intro:
       'Đàn cò (đàn nhị) là nhạc cụ dây kéo có hai dây, bầu cộng hưởng nhỏ và cần đàn dài, dùng vĩ (cung) kéo để tạo âm.',
