@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Volume2, Music, Sparkles, Waves, Hand } from 'lucide-react'
 import type { Instrument } from '@/data/instruments'
+import { cn } from '@/lib/utils'
 
 function buildQuestion(name: string) {
   return `${name} có vai trò như thế nào trong Đờn ca tài tử?`
