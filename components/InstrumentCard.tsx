@@ -34,15 +34,38 @@ export function InstrumentCard({ instrument }: { instrument: Instrument }) {
       </div>
 
       <div className="mt-8 overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
-        <div className="relative aspect-[16/9] w-full bg-secondary">
-          <Image
-            src={instrument.image || '/placeholder.svg'}
-            alt={`Hình ảnh ${instrument.name}`}
-            fill
-            className={cn("object-cover", instrument.imagePosition || "object-center")}
-            sizes="(max-width: 1024px) 100vw, 800px"
-          />
-        </div>
+        {instrument.secondaryImage ? (
+          <div className="flex w-full aspect-[16/9]">
+            <div className="relative h-full w-1/2 bg-secondary border-r border-border">
+              <Image
+                src={instrument.image || '/placeholder.svg'}
+                alt={`Hình ảnh ${instrument.name} 1`}
+                fill
+                className={cn('object-cover', instrument.imagePosition || 'object-center')}
+                sizes="(max-width: 1024px) 50vw, 400px"
+              />
+            </div>
+            <div className="relative h-full w-1/2 bg-secondary">
+              <Image
+                src={instrument.secondaryImage}
+                alt={`Hình ảnh ${instrument.name} 2`}
+                fill
+                className={cn('object-cover', instrument.imagePosition || 'object-center')}
+                sizes="(max-width: 1024px) 50vw, 400px"
+              />
+            </div>
+          </div>
+        ) : (
+          <div className="relative aspect-[16/9] w-full bg-secondary">
+            <Image
+              src={instrument.image || '/placeholder.svg'}
+              alt={`Hình ảnh ${instrument.name}`}
+              fill
+              className={cn('object-cover', instrument.imagePosition || 'object-center')}
+              sizes="(max-width: 1024px) 100vw, 800px"
+            />
+          </div>
+        )}
       </div>
 
       <div className="mt-8 grid gap-6 md:grid-cols-2">
