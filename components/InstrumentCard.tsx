@@ -75,25 +75,17 @@ export function InstrumentCard({ instrument }: { instrument: Instrument }) {
         <DetailBlock icon={Hand} title="Kỹ thuật biểu diễn tiêu biểu" text={instrument.technique} />
       </div>
 
-      <div className="mt-8 rounded-2xl border border-dashed border-border bg-secondary/50 p-6">
-        <div className="flex items-center gap-2 text-muted-foreground">
-          <Volume2 className="h-5 w-5" aria-hidden="true" />
-          <span className="font-semibold">Audio minh họa</span>
-        </div>
-        {instrument.audio ? (
+      {instrument.audio && (
+        <div className="mt-8 rounded-2xl border border-dashed border-border bg-secondary/50 p-6">
+          <div className="flex items-center gap-2 text-muted-foreground">
+            <Volume2 className="h-5 w-5" aria-hidden="true" />
+            <span className="font-semibold">Audio minh họa</span>
+          </div>
           <audio controls className="mt-4 w-full" src={instrument.audio}>
             Trình duyệt của bạn không hỗ trợ phát audio.
           </audio>
-        ) : (
-          <p className="mt-3 text-sm text-muted-foreground">
-            (Chưa có file audio. Thêm đường dẫn audio vào{' '}
-            <code className="rounded bg-muted px-1 py-0.5 font-mono text-xs">
-              data/instruments.ts
-            </code>{' '}
-            để hiển thị trình phát.)
-          </p>
-        )}
-      </div>
+        </div>
+      )}
 
       {instrument.gallery.length > 0 && (
         <div className="mt-8">
