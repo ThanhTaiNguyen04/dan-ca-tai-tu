@@ -89,7 +89,7 @@ export const instruments: Instrument[] = [
   {
     id: 'sao-truc',
     name: 'Sáo trúc',
-    image: '/images/instruments/sao-truc.png',
+    image: '/images/instruments/Sao-truc.jpg',
     intro:
       'Sáo trúc là nhạc cụ hơi làm từ ống trúc, có các lỗ bấm, người chơi thổi ngang để tạo âm.',
     sound:
@@ -98,7 +98,7 @@ export const instruments: Instrument[] = [
       'Bổ sung màu sắc bay bổng, đối đáp và hòa quyện cùng các nhạc cụ dây trong ban tài tử.',
     technique:
       'Kỹ thuật điều khiển hơi, láy lưỡi và rung hơi để tạo hoa mỹ cho giai điệu.',
-    gallery: ['/images/instruments/sao-truc.png'],
+    gallery: ['/images/instruments/Sao-truc.jpg'],
   },
   {
     id: 'guitar-phim-lom',
