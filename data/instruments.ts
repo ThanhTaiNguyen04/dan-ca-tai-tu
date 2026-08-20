@@ -42,7 +42,7 @@ export const instruments: Instrument[] = [
     id: 'dan-kim',
     name: 'Đàn kìm',
     alias: 'Đàn nguyệt',
-    image: '/images/instruments/dan-kim.png',
+    image: '/images/instruments/dan-nguyet-1.jpg',
     intro:
       'Đàn kìm (đàn nguyệt) có bầu đàn tròn dẹt, cần đàn dài với các phím cao, thường dùng hai dây. Đây là nhạc cụ được xem là trụ cột trong nhiều ban Đờn ca tài tử.',
     sound:
@@ -51,13 +51,13 @@ export const instruments: Instrument[] = [
       'Thường được coi là nhạc cụ nòng cốt, giữ nhịp và dẫn dắt trong hòa tấu tài tử.',
     technique:
       'Kết hợp gảy và nhấn phím để tạo độ ngân, luyến; kỹ thuật nhấn cho phép biến hóa cao độ linh hoạt.',
-    gallery: ['/images/instruments/dan-kim.png'],
+    gallery: ['/images/instruments/dan-nguyet-1.jpg'],
   },
   {
     id: 'dan-co',
     name: 'Đàn cò',
     alias: 'Đàn nhị',
-    image: '/images/instruments/dan-co.png',
+    image: '/images/instruments/dan_co.png',
     intro:
       'Đàn cò (đàn nhị) là nhạc cụ dây kéo có hai dây, bầu cộng hưởng nhỏ và cần đàn dài, dùng vĩ (cung) kéo để tạo âm.',
     sound:
@@ -66,13 +66,13 @@ export const instruments: Instrument[] = [
       'Góp phần tạo màu sắc trữ tình và nâng đỡ giai điệu trong ban nhạc tài tử.',
     technique:
       'Tay phải điều khiển vĩ kéo, tay trái bấm và nhấn trên dây để tạo cao độ và sắc thái.',
-    gallery: ['/images/instruments/dan-co.png'],
+    gallery: ['/images/instruments/dan_co.png'],
   },
   {
     id: 'dan-bau',
     name: 'Đàn bầu',
     alias: 'Độc huyền cầm',
-    image: '/images/instruments/dan-bau.png',
+    image: '/images/instruments/dan_bau.jpg',
     intro:
       'Đàn bầu là nhạc cụ độc đáo chỉ có một dây, kết hợp thân đàn dài và cần đàn mềm gắn bầu cộng hưởng, tạo âm chủ yếu bằng bồi âm (âm bội).',
     sound:
@@ -81,7 +81,7 @@ export const instruments: Instrument[] = [
       'Mang lại màu sắc trữ tình đặc trưng, thường điểm xuyết và tạo chiều sâu cảm xúc.',
     technique:
       'Tay phải gảy tạo bồi âm, tay trái điều khiển cần đàn để uốn, rung và luyến cao độ.',
-    gallery: ['/images/instruments/dan-bau.png'],
+    gallery: ['/images/instruments/dan_bau.jpg'],
   },
   {
     id: 'sao-truc',
@@ -115,7 +115,7 @@ export const instruments: Instrument[] = [
   {
     id: 'song-lang',
     name: 'Song lang',
-    image: '/images/instruments/song-lang.png',
+    image: '/images/instruments/song_lang.jpg',
     intro:
       'Song lang là nhạc cụ gõ nhỏ dùng để giữ nhịp, thường gồm một khối gỗ với thanh gõ bật, tạo tiếng "cốc" điểm nhịp.',
     sound:
@@ -124,7 +124,7 @@ export const instruments: Instrument[] = [
       'Giữ vai trò điểm nhịp (song lang), giúp các nhạc công và người ca giữ đúng khuôn nhịp.',
     technique:
       'Thường điều khiển bằng chân hoặc tay để gõ đúng vào các điểm nhịp quan trọng của bài.',
-    gallery: ['/images/instruments/song-lang.png'],
+    gallery: ['/images/instruments/song_lang.jpg'],
   },
 ]
 
