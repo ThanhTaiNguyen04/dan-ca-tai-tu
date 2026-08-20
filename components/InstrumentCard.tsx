@@ -20,7 +20,7 @@ export function InstrumentCard({ instrument }: { instrument: Instrument }) {
           </h1>
           {instrument.alias && (
             <p className="mt-2 text-lg text-muted-foreground">
-              Còn gọi: {instrument.alias}
+              {instrument.alias}
             </p>
           )}
         </div>

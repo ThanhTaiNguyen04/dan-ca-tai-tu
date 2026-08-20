@@ -61,6 +61,7 @@ export const instruments: Instrument[] = [
     name: 'Đàn cò',
     alias: 'Đàn nhị',
     image: '/images/instruments/dan_co.png',
+    imagePosition: 'object-bottom',
     intro:
       'Đàn cò (đàn nhị) là nhạc cụ dây kéo có hai dây, bầu cộng hưởng nhỏ và cần đàn dài, dùng vĩ (cung) kéo để tạo âm.',
     sound:
