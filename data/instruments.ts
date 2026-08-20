@@ -8,6 +8,8 @@ export interface Instrument {
   /** Tên gọi khác (nếu có) */
   alias?: string
   image: string
+  /** Vị trí focus của ảnh khi dùng object-cover (vd: 'object-bottom') */
+  imagePosition?: string
   /** Đường dẫn file audio minh họa, đặt trong /public/audio/ nếu có */
   audio?: string
   /** Giới thiệu chung */
@@ -43,6 +45,7 @@ export const instruments: Instrument[] = [
     name: 'Đàn nguyệt',
     alias: 'Đàn kìm',
     image: '/images/instruments/dan-nguyet-1.jpg',
+    imagePosition: 'object-bottom',
     intro:
       'Đàn nguyệt (đàn kìm) có bầu đàn tròn dẹt, cần đàn dài với các phím cao, thường dùng hai dây. Đây là nhạc cụ được xem là trụ cột trong nhiều ban Đờn ca tài tử.',
     sound:

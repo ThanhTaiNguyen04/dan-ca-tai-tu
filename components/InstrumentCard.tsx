@@ -38,7 +38,7 @@ export function InstrumentCard({ instrument }: { instrument: Instrument }) {
             src={instrument.image || '/placeholder.svg'}
             alt={`Hình ảnh ${instrument.name}`}
             fill
-            className="object-contain"
+            className={cn("object-cover", instrument.imagePosition || "object-center")}
             sizes="(max-width: 1024px) 100vw, 800px"
           />
         </div>
@@ -84,7 +84,7 @@ export function InstrumentCard({ instrument }: { instrument: Instrument }) {
                   src={src || '/placeholder.svg'}
                   alt={`${instrument.name} - ảnh ${i + 1}`}
                   fill
-                  className="object-contain transition-transform hover:scale-105"
+                  className="object-cover transition-transform hover:scale-105"
                   sizes="200px"
                 />
               </div>
